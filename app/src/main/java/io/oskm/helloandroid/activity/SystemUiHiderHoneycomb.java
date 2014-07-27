@@ -1,4 +1,4 @@
-package io.oskm.helloandroid.util;
+package io.oskm.helloandroid.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

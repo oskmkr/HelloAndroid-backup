@@ -1,4 +1,4 @@
-package io.oskm.helloandroid.util;
+package io.oskm.helloandroid.activity;
 
 import android.app.Activity;
 import android.os.Build;

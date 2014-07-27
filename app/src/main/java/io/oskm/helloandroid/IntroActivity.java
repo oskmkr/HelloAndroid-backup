@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 
-import io.oskm.helloandroid.util.SystemUiHider;
+import io.oskm.helloandroid.activity.SystemUiHider;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
