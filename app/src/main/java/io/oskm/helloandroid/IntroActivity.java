@@ -35,7 +35,7 @@ public class IntroActivity extends Activity {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         handler = new Handler();
-        handler.postDelayed(iRun, 4000);
+        handler.postDelayed(iRun, 1000);
     }
 
     @Override

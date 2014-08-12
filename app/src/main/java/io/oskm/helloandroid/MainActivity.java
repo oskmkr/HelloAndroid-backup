@@ -74,12 +74,12 @@ public class MainActivity extends Activity {
                     if (gcm == null) {
                         gcm = GoogleCloudMessaging.getInstance(context);
                     }
-                        regId = gcm.register(SENDER_ID);
-                        msg = "Device registered, registration ID=" + regId;
-                        Log.i(TAG, "[msg] : " + msg);
-                        sendRegistrationIdtoBackend();
+                    regId = gcm.register(SENDER_ID);
+                    msg = "Device registered, registration ID=" + regId;
+                    Log.i(TAG, "[msg] : " + msg);
+                    sendRegistrationIdtoBackend();
 
-                        storeRegistrationId(context, regId);
+                    storeRegistrationId(context, regId);
 
                 } catch (IOException ex) {
                     Log.i(TAG, "error : " + ex.getMessage());
@@ -160,6 +160,14 @@ public class MainActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            return true;
+        } else if (id == R.id.action_room_list) {
+            Intent intentRoomListActivity = new Intent(MainActivity.this, RoomListActivity.class);
+            startActivity(intentRoomListActivity);
+            return true;
+        } else if (id == R.id.action_login) {
+            Intent intentLoginActivity = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intentLoginActivity);
             return true;
         }
         return super.onOptionsItemSelected(item);
