@@ -20,5 +20,13 @@
     <string name="nickname_input_notice">닉네임을 입력해주세요</string>
     <string name="nickname_default">oskm</string>
     <string name="nickname_submit">확인</string>
+    <string name="title_activity_widget_test">WidgetTestActivity</string>
+    <string name="title_activity_widget_activity2">WidgetActivity2</string>
+    <string name="title_activity_date_time_widget_test">DateTimeWidgetTestActivity</string>
+    <string name="emailaddress">oskmkr@naver.com</string>
+    <string name="webadress">http://www.naver.com</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="msg_send_btn">Send</string>
+    <string name="msg_input_hint">input send message</string>
 
 </resources>

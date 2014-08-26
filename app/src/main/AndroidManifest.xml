@@ -24,8 +24,13 @@
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
-            android:name=".RoomActivity"
+            android:name=".chat.RoomActivity"
             android:label="@string/title_activity_room" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".RoomListActivity"
@@ -47,10 +52,24 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget.WidgetTestActivity"
+            android:label="@string/title_activity_widget_test" >
+
+        </activity>
+        <activity
+            android:name=".widget.TextFieldWidgetTestActivity"
+            android:label="@string/title_activity_widget_activity2" >
+        </activity>
+        <activity
+            android:name=".widget.DateTimeWidgetTestActivity"
+            android:label="@string/title_activity_date_time_widget_test" >
+        </activity>
+        <activity
+            android:name=".camera.CameraActivity"
+            android:label="@string/title_activity_camera" >
+
         </activity>
     </application>
 
@@ -67,5 +86,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

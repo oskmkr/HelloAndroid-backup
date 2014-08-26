@@ -1,4 +1,4 @@
-package io.oskm.helloandroid;
+package io.oskm.helloandroid.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,19 +6,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import io.oskm.helloandroid.R;
 
-public class RoomActivity extends Activity {
+public class DateTimeWidgetTestActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_room);
+        setContentView(R.layout.activity_date_time_widget_test);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.room, menu);
+        getMenuInflater().inflate(R.menu.date_time_widget_test, menu);
         return true;
     }
 
